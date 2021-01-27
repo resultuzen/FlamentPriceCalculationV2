@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>3B Baskı Maliyet Hesaplama Uygulaması</title>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<meta name="viewport" content="width=device-width" />
+
+<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png" />
+<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+<link href="assets/css/material-bootstrap-wizard.css" rel="stylesheet" />
+<link href="assets/css/demo.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="image-container set-full-height" style="background-image: url('assets/img/backSkull.jpg')">
+   <div class="container">
+       <div class="row">
+       <div class="col-sm-8 col-sm-offset-2">
+           <div class="wizard-container">
+               <div class="card wizard-card" data-color="green" id="wizard">
+               <form action="" method="">
+
+                    <div class="wizard-header">
+                        <h3 class="wizard-title">
+                        3B Baskı Maliyet Hesaplama Uygulaması
+                        </h3>
+						<h5>Gerekli bilgileri yazarak, saniyeler içerisinde maliyet hesaplayın!</h5>
+                    </div>
+						<div class="wizard-navigation">
+						<ul>
+                           <li><a href="#maliyetVerileri" data-toggle="tab">MALİYET VERİLERİ</a></li>
+                           <li><a href="#baskiVerileri" data-toggle="tab">BASKI VERİLERİ</a></li>
+                           <li><a href="#sonucVerileri" data-toggle="tab">SONUÇLAR</a></li>
+                        </ul>
+						</div>
+
+                       <div class="tab-content">
+                           <div class="tab-pane" id="maliyetVerileri">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h5 class="info-text">Ne kadar bir maliyet harcadınız?</h4>
+                                </div>
+
+                                <div class="col-sm-4 col-sm-offset-1">
+	                                <div class="input-group">
+										<span class="input-group-addon">
+										<i class="material-icons">group</i>
+										</span>
+	                                    <div class="form-group label-floating">
+	                                           <label class="control-label">Abonelik Türü</label>
+	                                            <select name="abonelikTuru" class="form-control">
+	                                                <option disabled="" selected=""></option>
+	                                                <option value="ev"> Ev </option>
+	                                                <option value="isyeri"> İşyeri </option>
+	                                            </select>
+	                                        </div>
+	                                </div>
+                                </div>
+
+                                <div class="col-sm-5 col-sm-offset-1">
+	                                <div class="input-group">
+										<span class="input-group-addon">
+										<i class="material-icons">timeline</i>
+										</span>
+	                                    <div class="form-group label-floating">
+	                                        <label class="control-label">Filament Ağırlığı</label>
+	                                        <div class="input-group">
+	                                            <input type="text" class="form-control">
+	                                            <span class="input-group-addon">kg</span>
+	                                        </div>
+	                                       </div>
+	                                    </div>
+	                                </div>
+
+                                <div class="col-sm-5 col-sm-offset-1">
+	                                <div class="input-group">
+										<span class="input-group-addon">
+										<i class="material-icons">gesture</i>
+										</span>
+	                                    <div class="form-group label-floating">
+	                                        <label class="control-label">Filament Fiyatı</label>
+	                                        <div class="input-group">
+	                                            <input type="text" class="form-control">
+	                                            <span class="input-group-addon">₺</span>
+	                                        </div>
+	                                       </div>
+	                                    </div>
+	                                </div>
+
+                                <div class="col-sm-6">
+	                                <div class="input-group">
+										<span class="input-group-addon">
+										<i class="material-icons">flash_on</i>
+										</span>
+	                                    <div class="form-group label-floating">
+	                                           <label class="control-label">3B Yazıcı Güç Miktarı</label>
+	                                        <div class="input-group">
+	                                            <input type="text" class="form-control">
+	                                            <span class="input-group-addon">W/h</span>
+	                                        </div>
+                                        </div>
+	                                </div>
+                                </div>
+
+
+                                <div class="col-sm-5 col-sm-offset-1">
+	                                <div class="input-group">
+										<span class="input-group-addon">
+										<i class="material-icons">access_time</i>
+										</span>
+	                                    <div class="form-group label-floating">
+	                                        <label class="control-label">3B Yazıcı Çalışma Süresi</label>
+	                                        <div class="input-group">
+	                                            <input type="text" class="form-control">
+	                                            <span class="input-group-addon">saat</span>
+	                                        </div>
+                                       </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-5">
+	                                <div class="input-group">
+										<span class="input-group-addon">
+										<i class="material-icons">payments</i>
+										</span>
+	                                    <div class="form-group label-floating">
+	                                        <label class="control-label">3B Yazıcı Saatlik Fiyatı</label>
+	                                        <div class="input-group">
+	                                            <input type="text" class="form-control">
+	                                            <span class="input-group-addon">₺</span>
+	                                        </div>
+	                                   </div>
+	                                </div>
+                                </div>
+                            </div>
+                           </div>
+
+                           <div class="tab-pane" id="baskiVerileri">
+                               <div class="row">
+                                <div class="col-sm-12">
+                                    <h5 class="info-text">Baskı verileriniz neler diyor?</h4>
+                                </div>
+                                   
+                                <div class="input-group col-sm-4 col-sm-offset-4">
+									<span class="input-group-addon">
+									<i class="material-icons">share_arrival_time</i>
+									</span>
+                                    <div class="form-group label-floating">
+                                        <label class="control-label">Baskı Süresi</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-addon">saat</span>
+                                        </div>
+                                   </div>
+                                </div>
+
+                                <div class="input-group col-sm-4 col-sm-offset-4">
+									<span class="input-group-addon">
+									<i class="material-icons">network_check</i>
+									</span>
+                                    <div class="form-group label-floating">
+                                        <label class="control-label">Baskı Ağırlığı</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-addon">kg</span>
+                                        </div>
+                                   	</div>
+                                </div>
+                               </div>
+                           </div>
+
+                           <div class="tab-pane" id="sonucVerileri">
+                               <div class="row">
+                                <div class="col-sm-12">
+                                    <h5 class="info-text">Ne kadar bir fiyat teklifi vereceksiniz?</h4>
+                                </div>
+
+                                <div class="input-group col-sm-offset-5">
+										<span class="input-group-addon">
+										<i class="material-icons">electrical_services</i>
+										</span>
+                                    <div class="form-group label-floating">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">1000₺</span>
+                                        </div>
+                                       </div>
+                                    </div>
+
+                                    <div class="input-group col-sm-offset-5">
+										<span class="input-group-addon">
+										<i class="material-icons">layers</i>
+										</span>
+                                    <div class="form-group label-floating">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">1000₺</span>
+                                        </div>
+                                       </div>
+                                    </div>
+
+                                    <div class="input-group col-sm-offset-5">
+										<span class="input-group-addon">
+										<i class="material-icons">engineering</i>
+										</span>
+                                    <div class="form-group label-floating">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">1000₺</span>
+                                        </div>
+                                       </div>
+                                    </div>
+
+                                    <div class="input-group col-sm-offset-5">
+										<span class="input-group-addon">
+										<i class="material-icons">shopping_cart</i>
+										</span>
+                                    <div class="form-group label-floating">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">1000₺</span>
+                                        </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="wizard-footer">
+                            <div class="pull-right">
+                                   <input type='button' class='btn btn-next btn-fill btn-success btn-wd' name='next' value='İLERİ' />
+                                   <input type='button' class='btn btn-finish btn-fill btn-success btn-wd' name='finish' value='HESAPLA' />
+                               </div>
+                               <div class="pull-left">
+                                   <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='GERİ' />
+                               </div>
+                           <div class="clearfix"></div>
+                       </div>
+               </form>
+               </div>
+           </div>
+       </div>
+       </div>
+   </div>
+
+   <div class="footer">
+       <div class="container text-center"> Bu uygulama <a href="https://www.resultuzen.com.tr" target = "_blank">Resul Tüzen</a> tarafından hazırlanmıştır. <i class="fa fa-heart heart"></i>
+   </div>
+</div>
+
+</body>
+
+<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery.bootstrap.js" type="text/javascript"></script>
+<script src="assets/js/material-bootstrap-wizard.js"></script>
+<script src="assets/js/jquery.validate.min.js"></script>
+
+</html>
